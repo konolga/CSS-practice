@@ -21,3 +21,23 @@ You can set display: inline-block  to merge behaviors:` <a> , <span> , <img>`
 box-sizing : https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
 More on height & width: https://www.w3schools.com/css/css_dimension.asp
 The display  Property: https://developer.mozilla.org/en-US/docs/Web/CSS/display
+
+### Positioning
+Positioning Context (anchor):
+`static` is default, remains in document flow.
+`fixed` relates to viewport. Convenient for navigation bar. To fix border outside viewport: `box-sizing: border-box`. Excluded from document flow.
+`absolute` relates to  another element: `html` or closest with position ancestor applied. Excluded from document flow.
+`relative` relates to itself, partly remains in document flow.
+`sticky` relates to viewport and another element, combination of `relative` and `fixed`, but is partly supported but browsers.
+
+Flow: `absolute` and `fixed` value take the element the value is applied to out of the document flow.
+
+Z-index default is 0 or auto. To use z-index must apply `position`.
+
+Stacking Context: defines stacking behavior of child elements, created when applying fixed/ sticky or absolute/ relative in combination with `z-index`. When we apply position we change stacking context from viewport to parent's stacking context. So other element with `z-index` 2, can still be on the top, because our parent's position 1, even if our element is 100, but inside parent and have position applied.
+
+The “position” properties: `top`,  `bottom`,  `left`  or `right` can be used only after we add `position` different than `static`. 
+
+Positioning theory: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning
+More about the "position" property: https://developer.mozilla.org/en-US/docs/Web/CSS/position
+The z-index: https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
