@@ -99,3 +99,16 @@ Recommended units:
 
 `top`, `bottom` => `%`
 
+### Mobile first
+
+Media queries go from smaller to bigger 
+
+@media (min-width: 40rem) and (min-height: 40rem) {}
+
+@media (min-width: 40rem), (orientation: landscape) {}
+
+@media (min-width: 40rem), (orientation: portrait) {}
+
+@media (min-width: 60rem) {}
+
+all @media should be in the end of css
