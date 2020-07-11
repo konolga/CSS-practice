@@ -1,6 +1,8 @@
 # CSS-practice and my comments for the course:
 [udemy] CSS - The Complete Guide 2020 (incl. Flexbox, Grid &amp; Sass)
 
+
+
 ### Combinators
 
 `+` Second element comes immediately after first element and share the same parent
@@ -12,6 +14,8 @@
 ` (space)` Second element is a descendant of the first element
 
 
+
+
 ### Block-level vs Inline Elements
 
 Block-level elements are rendered as a block and hence take up all the available horizontal space: `<div> , <section> , <article> , <nav>, <h1>, <p>`
@@ -19,6 +23,9 @@ Block-level elements are rendered as a block and hence take up all the available
 Inline elements on the other hand only take up the space they require to fit their content in. Setting a width  or height, margin-top  and margin-bottom  on an inline element also has no effect
 
 You can set display: inline-block  to merge behaviors:` <a> , <span> , <img>`
+
+
+
 
 ### Pseudo classes and elements
 `:` pseudo-class => special state of an element
@@ -28,6 +35,8 @@ box-sizing : https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
 More on height & width: https://www.w3schools.com/css/css_dimension.asp
 
 The display  Property: https://developer.mozilla.org/en-US/docs/Web/CSS/display
+
+
 
 ### Positioning
 Positioning Context (anchor):
@@ -56,6 +65,9 @@ Positioning theory: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layou
 More about the "position" property: https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
 The z-index: https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+
+
+
 
 ### Units
 Rules:
@@ -99,6 +111,8 @@ Recommended units:
 
 `top`, `bottom` => `%`
 
+
+
 ### Mobile first
 
 Media queries go from smaller to bigger 
@@ -112,3 +126,37 @@ Media queries go from smaller to bigger
 @media (min-width: 60rem) {}
 
 all @media should be in the end of css
+
+
+
+
+### Styling
+![Selectors](images/selectors.PNG)
+
+`.class input:not([type="checkbox"])` - select all inputs except checkboxes
+
+
+### Fonts
+`font-variant` - change case
+
+`font-stretch`
+
+`letter-spacing` - space between letters
+
+`white-space` - how white space is treated inside the element, `nowrap` - one line, `pre-line`, `pre-wrap`
+
+`line-height` - font size + 2 * space to border = height of element inside, depends on the font family
+
+`text-decoration` - underline, overline, line-through, dotted, wavy, color
+
+`text-shadow` - toRight; toBottom; Blur; Color;
+
+`font` - font shorthand
+
+`font-display` -strategy how to loaf fonts;
+
+`block period` - invisible fallback, space is reserved;
+
+`swap period` - fallback visible immediately;
+
+strategies: `[ auto | block | swap | fallback | optional ]`

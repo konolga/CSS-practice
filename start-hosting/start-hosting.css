@@ -28,7 +28,7 @@ main {
 
 /* .signup-form input[type="checkbox"] */
 .signup-form input[id*="terms"],
-.signup-form input[id*="terms"] + label {
+.signup-form input[id*="terms"]+label {
     display: inline-block;
     width: auto;
     vertical-align: bottom;
