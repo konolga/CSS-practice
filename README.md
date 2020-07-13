@@ -160,3 +160,28 @@ all @media should be in the end of css
 `swap period` - fallback visible immediately;
 
 strategies: `[ auto | block | swap | fallback | optional ]`
+
+
+### Flexbox
+![Flex](images/flex.PNG)
+
+if we apply  `display: flex` - the element becomes parent flex container
+
+`display: inline-flex` makes width fixed to line, cannot change it
+
+`flex-wrap: wrap` width would be reduced, children wrapped to next line
+
+`flex-direction: column/row` children in row or columns, or reverse, changes the main and cross axis
+
+![Axis](images/axis.PNG)
+
+`align-items: stretch` - default 
+
+`align-items: center` - will be centered along cross axis
+
+`align-items: flex-start` - will be on start, along cross axis
+
+`justify-content` - according to the main axis
+
+`align-items: baseline` - aligned not to child or parent border, but to child's content (text) baseline
+
