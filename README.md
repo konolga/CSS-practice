@@ -185,3 +185,15 @@ if we apply  `display: flex` - the element becomes parent flex container
 
 `align-items: baseline` - aligned not to child or parent border, but to child's content (text) baseline
 
+`align-items` for all items (on parent), but `align-self` for specific item (on child)
+
+Have to set width/height to use these:
+
+`flex-grow: 2` - the element will use remaining space available, over width
+
+`flex-shrink: 0`: not allowed to shrink, cannot become smaller than width. Default is 1.
+
+`flex-basis`:  sets the initial main size, always refer to main axis, 
+
+shortened: `flex: 0 1 auto`
+
