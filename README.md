@@ -229,3 +229,9 @@ can be replaced with shorthand:
 
 `justify-self` or `align-self` to override the above rules for specific element
 
+`grid-auto-flow` where new element should be added: row or column
+
+`auto-fit` and `auto-fill` add as many cells of certain size as you can
+
+`dense` take free space
+
