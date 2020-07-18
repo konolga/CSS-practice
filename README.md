@@ -197,3 +197,35 @@ Have to set width/height to use these:
 
 shortened: `flex: 0 1 auto`
 
+### CSS GRID
+use firefox to see layout with grid and names
+
+![Grid](images/grid.PNG)
+
+Container is grid itself, you decide how many rows and columns you need.
+Child elements are sit in grid cells
+
+can use `fr` - fracture, which splits remaining size accordingly
+
+this:
+![Grid](images/grid1.PNG)
+can be replaced with shorthand:
+`grid-area: row-1-start / 2 / row-2-end / span 3;`
+
+`grid-column-end: span 3` allows to occupy 3 cells, can lead to overlapping
+
+`grid-gap, grid-column-gap, grid-row-gap` to specify gaps between grid cells
+
+
+ `grid-template-rows: [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, auto) [row-2-end row-3-start] 100px [row-3-end]` you can assign row/line names in parent and reference them in child css
+
+`grid-template-areas` can give name to each cell per row and column, and refer to them in child element. `.` to leave without name.
+
+`grid-template-rows: 3.5rem auto fit-content(8rem)` - will use 8rem if content is smaller, but fit-content if bigger
+
+`justify-items` or `align-items` to position child to grid's rows or columns, default is stretch
+
+`justify-content` or `align-content` to position entire grid to X or Y
+
+`justify-self` or `align-self` to override the above rules for specific element
+
