@@ -235,3 +235,12 @@ can be replaced with shorthand:
 
 `dense` take free space
 
+### Transformations
+
+
+The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS
+`transform`
+`transform-origin`
+`skew` `skeY` `skewX`
+`scale` 
+`rotate`
