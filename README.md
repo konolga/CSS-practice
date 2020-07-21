@@ -244,3 +244,10 @@ The transform CSS property lets you rotate, scale, skew, or translate an element
 `skew` `skeY` `skewX`
 `scale` 
 `rotate`
+
+
+### Transitions & Animations
+`transition: WHAT DURATION DELAY TIMING-FUNCTION `
+
+`@keyframes naNAMEme {from {} to {} }`set of rules gradually change from the current style to the new style at certain times. Name can be applied as `animation: NAME DURATION DELAY TIMING-FUNCTION ITERATION DIRECTION FILL-MODE PLAY-STATE;` Can use % instead of from/to to split rule into more pieces
+
