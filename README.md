@@ -258,3 +258,13 @@ Use Reset Library like normalize.css
 Detect browsing support with @supports
 
 For vendor prefixes can use: autoprefixer css online
+
+### Naming
+
+use `kebab-case`
+
+don't use:  `camelCase`, `PascalCase`
+
+Name by feature (`.page-title`), not by stile (`.title-blue`)
+
+![Naming](images/Naming.PNG)
