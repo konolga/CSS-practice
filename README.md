@@ -131,12 +131,15 @@ all @media should be in the end of css
 
 
 ### Styling
+
 ![Selectors](images/selectors.PNG)
 
 `.class input:not([type="checkbox"])` - select all inputs except checkboxes
 
 
+
 ### Fonts
+
 `font-variant` - change case
 
 `font-stretch`
@@ -162,7 +165,10 @@ all @media should be in the end of css
 strategies: `[ auto | block | swap | fallback | optional ]`
 
 
+
+
 ### Flexbox
+
 ![Flex](images/flex.PNG)
 
 if we apply  `display: flex` - the element becomes parent flex container
@@ -197,7 +203,12 @@ Have to set width/height to use these:
 
 shortened: `flex: 0 1 auto`
 
+
+
+
+
 ### CSS GRID
+
 use firefox to see layout with grid and names
 
 ![Grid](images/grid.PNG)
@@ -235,8 +246,10 @@ can be replaced with shorthand:
 
 `dense` take free space
 
-### Transformations
 
+
+
+### Transformations
 
 The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS
 `transform`
@@ -247,9 +260,12 @@ The transform CSS property lets you rotate, scale, skew, or translate an element
 
 
 ### Transitions & Animations
+
 `transition: WHAT DURATION DELAY TIMING-FUNCTION `
 
 `@keyframes naNAMEme {from {} to {} }`set of rules gradually change from the current style to the new style at certain times. Name can be applied as `animation: NAME DURATION DELAY TIMING-FUNCTION ITERATION DIRECTION FILL-MODE PLAY-STATE;` Can use % instead of from/to to split rule into more pieces
+
+
 
 ### Cross-browser
 
@@ -258,6 +274,8 @@ Use Reset Library like normalize.css
 Detect browsing support with @supports
 
 For vendor prefixes can use: autoprefixer css online
+
+
 
 ### Naming
 
@@ -268,3 +286,16 @@ don't use:  `camelCase`, `PascalCase`
 Name by feature (`.page-title`), not by stile (`.title-blue`)
 
 ![Naming](images/Naming.PNG)
+
+
+
+
+### SASS/SCSS
+
+Syntactically Awesome Style Sheets - extends CSS during development
+
+Can nest selectors
+
+Need to compile to .css file in the end (can do automatically)
+
+variable: `$main-color: #fffff`, using `color: $main-color`
